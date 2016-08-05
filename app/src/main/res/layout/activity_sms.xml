@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EFF6"
+    android:orientation="vertical">
+
+    <include
+    android:id="@+id/top_nav_layout"
+    layout="@layout/layout_base_top_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/shape_sms_group_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="+86 中国"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="19.5dp"
+            android:layout_height="20.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12.5dp"
+            android:background="@mipmap/img_sign_right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sms_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_sms_group_background"
+            android:textCursorDrawable="@drawable/drawable_edit_cursor"
+            android:hint="请输入手机号码"
+            android:paddingLeft="8dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/sms_phone_get"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/shape_usr_sms_checkout_btn_background"
+            android:gravity="center"
+            android:text="验证"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_sms_group_background">
+
+        <EditText
+            android:id="@+id/sms_phone_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/drawable_edit_cursor"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sms_next"
+        android:layout_width="226dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/shape_usr_profit_btn_stoke"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#FF8149FF"
+        android:textSize="16sp" />
+</LinearLayout>

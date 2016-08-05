@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:paddingLeft="12.5dp"
+        android:paddingRight="12.5dp">
+
+        <View
+            android:id="@+id/usr_live_tag"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_nfc_red_tag" />
+
+        <TextView
+            android:id="@+id/usr_live_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="0个精彩回放"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/usr_live_renew"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="最新"
+            android:textColor="@color/color_usr_live_text_selector"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/usr_live_rehot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="27.5dp"
+            android:gravity="center_vertical"
+            android:text="最热"
+            android:textColor="@color/color_usr_live_text_selector"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.xcyo.live.view.NestedListView
+        android:id="@+id/usr_live_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"/>
+</LinearLayout>

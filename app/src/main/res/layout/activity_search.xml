@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackgroundColor"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_act_top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/mainBaseColor"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/search_act_input_container"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_search_edittext_bg">
+
+            <EditText
+                android:id="@+id/search_act_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_weight="1"
+                android:hint="搜索"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@mipmap/activity_search_icon"
+                android:drawablePadding="5dp"
+                android:textColor="@color/blackColor"
+                android:textColorHint="@color/tipGrayColor"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/search_act_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:src="@mipmap/close_normal_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search_act_cancel"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/selector_default_click_background"
+            android:text="取消" />
+
+    </LinearLayout>
+    <!-- 顶部导航栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/whiteColor">
+
+        <RadioGroup
+            android:id="@+id/search_act_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/search_act_user"
+                style="@style/search_top_nav_radiobutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="用户" />
+
+            <RadioButton
+                android:id="@+id/search_act_topic"
+                style="@style/search_top_nav_radiobutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="话题" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/search_act_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

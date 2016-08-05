@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通用颜色 -->
+    <color name="mainBaseColor">#8149ff</color>    <!--129,73,255-->
+    <color name="mainBackgroundColor">#f1eff6</color>     <!--241,239,246-->
+    <color name="tipGrayColor">#999999</color>     <!--153,153,153-->
+    <color name="tipGrayColor2">#cccccc</color>     <!--204,204,204-->
+    <color name="whiteColor">#FFFFFF</color>     <!--255,255,255-->
+    <color name="blackColor">#000000</color>     <!--0,0,0-->
+    <color name="black_3">#333333</color>        <!--51,51,51-->
+    <color name="floatingWhite">#eeeeee</color>     <!--238,238,238-->
+    <!-- 通用颜色-->
+
+    <!-- 某些view特有的颜色 -->
+    <color name="home_ad_indicator_black_color">#333333</color>   <!--51,51,51-->
+
+    <!-- message-->
+    <color name="message_edit_layout_bg_color">#f7f7f7</color>  <!--247,247,247-->
+    <color name="message_edit_bg_color">#c8c9cd</color>   <!--200,201,205-->
+    <color name="message_action_name_text_color">#8e8e8e</color>   <!--142,142,142-->
+
+    <!-- 个人信息 -->
+    <color name="user_info_action_text_color">#a89cff</color>   <!--168,156,255-->
+    <!-- 某些view特有的颜色 -->
+</resources>

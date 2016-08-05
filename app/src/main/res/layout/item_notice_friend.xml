@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:minHeight="64dp">
+    <!--头像-->
+    <RelativeLayout
+        android:id="@+id/search_user_frag_listview_item_avatar_layout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="6dp">
+        <com.xcyo.live.view.RoundImageView
+            android:id="@+id/item_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/temp_singer_photo" />
+
+        <ImageView
+            android:id="@+id/item_mark"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/search_user_followed"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+    <!--用户信息-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/search_user_frag_listview_item_avatar_layout"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/layout_user_name"/>
+        <!--个签-->
+        <TextView
+            android:id="@+id/item_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这个人很懒，什么都没有留下"
+            android:textSize="12sp"
+            android:textColor="#cccccc" />
+    </LinearLayout>
+    <!--关注-->
+    <ImageView
+        android:id="@+id/item_selected"
+        android:layout_width="29dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/checked_icon2" />
+</RelativeLayout>

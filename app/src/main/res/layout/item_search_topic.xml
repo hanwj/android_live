@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:minHeight="64dp">
+    <!--话题-->
+    <TextView
+        android:id="@+id/search_topic_frag_listview_item_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asdf"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:singleLine="true"
+        android:textColor="@color/tipGrayColor" />
+    <!--话题的数量-->
+    <TextView
+        android:id="@+id/search_topic_frag_listview_item_count"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asdf"
+        android:singleLine="true"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/tipGrayColor" />
+</RelativeLayout>

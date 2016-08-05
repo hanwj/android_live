@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+    <!-- 显示时间-->
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_message_time_bg"
+        android:textSize="11sp"
+        android:textColor="@android:color/white"/>
+    <!-- 头像（左右）-->
+    <com.xcyo.live.view.RoundImageView
+        android:id="@+id/item_left_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/item_time"/>
+    <com.xcyo.live.view.RoundImageView
+        android:id="@+id/item_right_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_time"/>
+    <!-- 正文-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/item_right_head"
+        android:layout_toRightOf="@id/item_left_head"
+        android:layout_below="@id/item_time"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+        <FrameLayout
+            android:id="@+id/item_content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

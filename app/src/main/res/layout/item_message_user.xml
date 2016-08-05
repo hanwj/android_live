@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:minHeight="64dp"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+        <!--头像-->
+        <RelativeLayout
+            android:id="@+id/message_user_frag_listview_item_avatar_layout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="6dp">
+
+            <com.xcyo.live.view.RoundImageView
+                android:id="@+id/message_user_frag_listview_item_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/temp_singer_photo" />
+
+            <ImageView
+                android:id="@+id/message_user_frag_listview_header_grade"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/search_user_followed"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+        <!--用户信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/message_user_frag_listview_item_avatar_layout"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+            <include
+                layout="@layout/layout_user_name"/>
+            <!--消息-->
+            <TextView
+                android:id="@+id/message_user_frag_listview_item_chat_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="60dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="打飞机啊搜达"
+                android:textSize="12sp"
+                android:textColor="@color/tipGrayColor2" />
+        </LinearLayout>
+        <!--时间-->
+        <TextView
+            android:id="@+id/message_user_frag_listview_item_time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="12:03"
+            android:textColor="@color/tipGrayColor"
+            android:layout_marginRight="18dp"
+            android:layout_alignTop="@+id/linearLayout" />
+        <!--小红点-->
+        <TextView
+            android:id="@+id/item_red_tip"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignRight="@id/message_user_frag_listview_item_time"
+            android:layout_alignBottom="@id/linearLayout"
+            android:background="@drawable/shape_red_point"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="9sp"
+            android:text="1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackgroundColor"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!-- 顶部导航栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/mainBaseColor">
+
+        <ImageView
+            android:id="@+id/message_act_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/back_icon" />
+
+        <RadioGroup
+            android:id="@+id/message_act_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/message_act_follow"
+                style="@style/home_top_nav_radiobutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/selector_rb_bottom_indicator"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="关注" />
+
+            <RadioButton
+                android:id="@+id/message_act_unfollow"
+                style="@style/home_top_nav_radiobutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/selector_rb_bottom_indicator"
+                android:layout_weight="1"
+                android:text="未关注" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/message_act_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="忽略未读" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/message_act_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+</LinearLayout>

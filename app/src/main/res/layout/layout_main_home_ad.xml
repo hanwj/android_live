@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="133dp"
+    android:background="@color/tipGrayColor">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_home_ad_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:background="@color/mainBaseColor">
+
+    </android.support.v4.view.ViewPager>
+
+    <com.xcyo.live.view.IndicatorView
+        android:id="@+id/main_home_ad_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal|bottom"/>
+</FrameLayout>

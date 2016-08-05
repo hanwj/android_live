@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AC91FE"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_nav_layout"
+            layout="@layout/layout_base_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="26.5dp"
+                android:layout_marginRight="26.5dp"
+                android:layout_marginTop="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_usr_level_discribe"
+                android:minHeight="366dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/usr_level_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="31dp"
+                    android:src="@mipmap/usr_level_img" />
+
+                <TextView
+                    android:id="@+id/usr_level_currentindex"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="51dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:singleLine="true"
+                    android:text="0/1000"
+                    android:textColor="#8149FF"
+                    android:textSize="12sp" />
+
+                <ProgressBar
+                    android:id="@+id/usr_level_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/darker_gray"
+                    android:max="100"
+                    android:progress="40"
+                    android:progressDrawable="@drawable/shape_usr_level_progress" />
+
+                <TextView
+                    android:id="@+id/usr_level_discribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="31dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/level_discribe"
+                    android:textColor="#999999"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/usr_level_footer"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:id="@+id/usr_level_right_detail"
+                android:layout_width="match_parent"
+                android:layout_height="31dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="我的特权"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="32dp"
+                    android:gravity="bottom|right"
+                    android:text="详细"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="19.5dp"
+                    android:layout_height="20.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.5dp"
+                    android:background="@mipmap/img_sign_right" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/usr_level_icon_layer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/usr_level_icon"
+                        android:layout_width="49.5dp"
+                        android:layout_height="49.5dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/usr_level_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/usr_level_icon"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_horizontal"
+                        android:text="专属图标"
+                        android:textColor="#999999"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/usr_level_line_layer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/usr_level_line"
+                        android:layout_width="49.5dp"
+                        android:layout_height="49.5dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/usr_level_line" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/usr_level_line"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_horizontal"
+                        android:text="排名靠前"
+                        android:textColor="#999999"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/usr_level_17_layer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/usr_level_17"
+                        android:layout_width="49.5dp"
+                        android:layout_height="49.5dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/usr_level_17" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/usr_level_17"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_horizontal"
+                        android:text="独家认证"
+                        android:textColor="#999999"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/usr_level_54_layer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/usr_level_54"
+                        android:layout_width="49.5dp"
+                        android:layout_height="49.5dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/usr_level_54" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/usr_level_54"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_horizontal"
+                        android:text="进房特效"
+                        android:textColor="#999999"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

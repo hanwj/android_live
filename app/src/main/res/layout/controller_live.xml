@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="71dp">
+
+    <ImageView
+        android:id="@+id/live_chat"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_room_chat" />
+
+    <ImageView
+        android:id="@+id/live_recent"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/live_music"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_room_recent" />
+
+    <ImageView
+        android:id="@+id/live_music"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/live_pop"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_room_music" />
+
+    <ImageView
+        android:id="@+id/live_pop"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/live_exit"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_room_pop" />
+
+    <ImageView
+        android:id="@+id/live_exit"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_room_exit" />
+</RelativeLayout>

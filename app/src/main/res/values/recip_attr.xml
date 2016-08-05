@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="recip">
+        <attr name="innerColor" format="color"/>
+        <attr name="outerColor" format="color"/>
+        <attr name="outerSize" format="dimension"/>
+        <attr name="progressbarColor" format="color"/>
+        <attr name="maxProgress" format="integer"/>
+        <attr name="timerSize" format="dimension"/>
+        <attr name="tiptitle" format="string"/>
+        <attr name="titleSize" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="196.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="196.5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/live_gift_pager_layer"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#ef333333">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/live_gift_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/live_gift_pager_layer"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/live_gift_pager_layer"
+            android:layout_marginTop="1px"
+            android:background="#ef333333">
+
+            <Button
+                android:id="@+id/live_gift_recharge_send"
+                android:layout_width="77.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:background="@drawable/shape_live_recharge_send"
+                android:text="送出"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:text="充值:"
+                    android:textColor="#8149FF"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/live_gift_recharge_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="#8149FF"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/live_gift_recharge_img"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/darker_gray"
+                    android:scaleType="centerInside" />
+
+                <ImageView
+                    android:layout_width="10.5dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/live_recharge_img" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.xcyo.live.view.RecipNumberProgressBar xmlns:recip="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/live_gift_recharge_recip"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            recip:innerColor="#8149FF"
+            recip:maxProgress="60"
+            recip:outerColor="#8149FF"
+            recip:outerSize="5dp"
+            recip:progressbarColor="#EEEEEE"
+            recip:timerSize="13sp"
+            recip:tiptitle="连击"
+            recip:titleSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>

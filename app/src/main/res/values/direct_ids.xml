@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="direct_frame_container" type="id"/>
+    <item name="direct_controller_switch_av" type="id"/>
+    <item name="direct_controller_stop_av" type="id"/>
+    <item name="direct_controller_mute_audio" type="id"/>
+    <item name="direct_controller_switch_camera" type="id"/>
+    <item name="direct_controller_switch_bitrate" type="id"/>
+    <item name="direct_controller_filter" type="id"/><!--在硬解码的状态下使用滤镜功能（暂时不开放）-->
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_login_background_andriod">
+
+    <ImageView
+        android:id="@+id/usr_login_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usr_login_icon"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:text="悠悠直播"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/usr_login_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:gravity="center_horizontal"
+        android:text="登录即代表你同意悠悠直播服务和隐私条款"
+        android:textColor="#C0A2FC"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/usr_login_style"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/usr_login_agree"
+        android:layout_marginBottom="35dp">
+        <ImageView
+            android:id="@+id/usr_login_wechat"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_login_style_wechat"/>
+        <ImageView
+            android:id="@+id/usr_login_qq"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_login_style_qq"/>
+        <ImageView
+            android:id="@+id/usr_login_phone"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_login_style_phone"/>
+        <ImageView
+            android:id="@+id/usr_login_more"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_login_style_more"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/usr_login_style"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:text="选择登录方式"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

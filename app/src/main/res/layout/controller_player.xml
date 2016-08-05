@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="71dp">
+
+    <ImageView
+        android:id="@+id/player_chat"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_room_chat"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/player_recent"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/player_share"
+        android:src="@drawable/selector_room_recent"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/player_share"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/player_gift"
+        android:src="@drawable/selector_room_share"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/player_gift"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/player_exit"
+        android:src="@drawable/selector_room_gift"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/player_exit"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_room_exit"
+        android:scaleType="centerInside" />
+</RelativeLayout>

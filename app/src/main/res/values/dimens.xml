@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 字体大小-->
+    <dimen name="big_text_size">17sp</dimen>        <!-- 醒目的文字，例如标题-->
+    <dimen name="little_big_text_size">15sp</dimen> <!-- 稍大一点的文字，例如名字-->
+    <dimen name="normal_text_size">14sp</dimen>     <!-- 正常文字-->
+    <dimen name="small_text_size">11sp</dimen>      <!-- 提醒型文字-->
+    <!-- 字体大小-->
+
+    <!-- 通用大小
+        通用大小都放这，比如顶部导航栏高度，人物头像大小等类似的
+        -->
+    <dimen name="action_bar_height">40dp</dimen>  <!--顶部导航栏高度-->
+    <dimen name="head_icon_size">43dp</dimen>  <!--人物图标icon大小-->
+    <dimen name="distance_to_screen_sides">10dp</dimen>   <!--到屏幕两侧的距离-->
+    <!-- 通用大小-->
+
+    <dimen name="room_message_height">367dp</dimen>
+
+</resources>

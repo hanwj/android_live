@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="27dp"
+        android:paddingLeft="12.5dp"
+        android:paddingRight="12.5dp"
+        android:paddingTop="27dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/emotion_scr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_usr_edit_emotion"
+                android:gravity="center"
+                android:text="保密"
+                android:textColor="@color/color_usr_edit_emotion"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/emotion_single"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_usr_edit_emotion"
+                android:gravity="center"
+                android:text="单身"
+                android:textColor="@color/color_usr_edit_emotion"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/emotion_love"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_usr_edit_emotion"
+                android:gravity="center"
+                android:text="恋爱中"
+                android:textColor="@color/color_usr_edit_emotion"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/emotion_marry"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_usr_edit_emotion"
+                android:gravity="center"
+                android:text="已婚"
+                android:textColor="@color/color_usr_edit_emotion"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34.5dp"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/emotion_gay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_usr_edit_emotion"
+                android:gravity="center"
+                android:text="同性"
+                android:textColor="@color/color_usr_edit_emotion"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_usr_edit_emotion"
+                android:gravity="center"
+                android:textColor="@color/color_usr_edit_emotion"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_usr_edit_emotion"
+                android:gravity="center"
+                android:textColor="@color/color_usr_edit_emotion"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_usr_edit_emotion"
+                android:gravity="center"
+                android:textColor="@color/color_usr_edit_emotion"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

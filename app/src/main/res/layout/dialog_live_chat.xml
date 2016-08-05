@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/room_amin_container"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"/>
+
+    <RelativeLayout
+        android:id="@+id/room_fighting_container"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"/>
+
+    <RelativeLayout
+        android:id="@+id/room_uio_container"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"/>
+
+    <ListView
+        android:id="@+id/room_listview"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginRight="100dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="7dp"
+        android:paddingLeft="12dp" />
+
+    <RelativeLayout
+        android:id="@+id/room_controller"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="12.5dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/dialog_barrage_layout"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:background="@drawable/selector_chat_barrage_bg">
+            <TextView
+                android:id="@+id/dialog_barrage_text"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:background="@drawable/shape_chat_barrage_bg"
+                android:textSize="12sp"
+                android:textColor="@color/selector_chat_barrage_color"
+                android:text="弹幕"/>
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/dialog_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/shape_live_chat_bg"
+            android:textColorHint="@color/tipGrayColor"
+            android:textColor="@color/blackColor"
+            android:hint="和大家说点什么"/>
+        <Button
+            android:id="@+id/dialog_send"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_message_send_bg"
+            android:textColor="@color/whiteColor"
+            android:textSize="14sp"
+            android:text="发送"/>
+    </LinearLayout>
+
+</LinearLayout>

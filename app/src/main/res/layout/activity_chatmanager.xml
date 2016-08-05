@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slide="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EFF6"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_nav_layout"
+        layout="@layout/layout_base_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:singleLine="true"
+            android:text="直播消息提醒"
+            android:textColor="#070707"
+            android:textSize="17sp" />
+        <com.xcyo.live.view.SlideSwitch
+            android:id="@+id/chatmanager_all"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            slide:isOpen="false"
+            slide:shape="circle"
+            slide:themeColor="#ff8149ff"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="1.5px"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="直播消息提醒"
+                android:textColor="#070707"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:paddingTop="3.7dp"
+                android:singleLine="true"
+                android:text="你可以关闭某个人的提醒,不在接受TA的直播消息"
+                android:textColor="#A5ABB5"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <com.xcyo.live.view.SlideSwitch
+            android:id="@+id/chatmanager_close"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            slide:isOpen="false"
+            slide:shape="circle"
+            slide:themeColor="#ff8149ff"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/setting_chatmanager_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:listSelector="@android:color/transparent" />
+</LinearLayout>

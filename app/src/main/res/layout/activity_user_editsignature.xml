@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EFF6"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_nav_layout"
+        layout="@layout/layout_base_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <EditText
+            android:id="@+id/usr_edit_signature_info"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:gravity="left|top"
+            android:hint="在此处开始输入..."
+            android:padding="12.5dp"
+            android:textColor="#FFA89CFF"
+            android:textColorHint="#D3D3D3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/usr_edit_signature_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="12.5dp"
+            android:minHeight="24dp"
+            android:minWidth="24dp"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/usr_edit_signature_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginRight="12.5dp"
+            android:minHeight="24dp"
+            android:minWidth="24dp"
+            android:singleLine="true"
+            android:background="@drawable/selector_close_btn"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/usr_edit_signature_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal"
+        android:text="最多还可以输入0个字"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/room_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/room_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/room_amin_container"
+            android:layout_width="match_parent"
+            android:layout_height="138dp" />
+
+        <RelativeLayout
+            android:id="@+id/room_fighting_container"
+            android:layout_width="match_parent"
+            android:layout_height="57dp" />
+
+        <RelativeLayout
+            android:id="@+id/room_uio_container"
+            android:layout_width="match_parent"
+            android:layout_height="37dp" />
+
+        <ListView
+            android:id="@+id/room_listview"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginRight="100dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="7dp"
+            android:paddingLeft="12dp" />
+        <!-- 底部操作布局-->
+        <RelativeLayout
+            android:id="@+id/room_controller"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:padding="12.5dp">
+        </RelativeLayout>
+        <!--发送消息布局-->
+        <LinearLayout
+            android:id="@+id/dialog_send_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/whiteColor"
+            android:visibility="gone">
+            <RelativeLayout
+                android:id="@+id/dialog_barrage_layout"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:background="@drawable/selector_chat_barrage_bg">
+                <TextView
+                    android:id="@+id/dialog_barrage_text"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:background="@drawable/shape_chat_barrage_bg"
+                    android:textSize="12sp"
+                    android:textColor="@color/selector_chat_barrage_color"
+                    android:text="弹"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="16dp"
+                android:background="#c8c7cc"/>
+            <EditText
+                android:id="@+id/dialog_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@null"
+                android:textColorHint="@color/tipGrayColor"
+                android:textColor="@color/blackColor"
+                android:hint="和大家说点什么"/>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="12dp"
+                android:background="#c8c7cc"/>
+            <Button
+                android:id="@+id/dialog_send"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:textColor="@color/mainBaseColor"
+                android:textSize="14sp"
+                android:text="发送"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/room_head"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_room_singer_head"
+            android:orientation="horizontal"
+            android:paddingLeft="2.5dp"
+            android:paddingRight="8.5dp">
+
+            <com.xcyo.live.view.RoundImageView
+                android:id="@+id/room_singler_icon"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/temp_singer_photo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/room_singler_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="直播room"
+                    android:textColor="#EEEEEE"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/room_singler_uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="000000"
+                    android:textColor="#EEEEEE"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/room_singler_follow"
+                android:layout_width="35dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_room_singer_follow"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/room_audience"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/room_singler_contribution_list"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_below="@+id/room_head"
+        android:background="@drawable/shape_room_singler_coin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="悠币"
+            android:textColor="#AC91FE"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/room_singler_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24dp"
+            android:gravity="center_vertical"
+            android:text="00000000"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/room_live_more" />
+    </LinearLayout>
+</RelativeLayout>

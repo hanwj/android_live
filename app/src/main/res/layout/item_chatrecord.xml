@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slide="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <RelativeLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp">
+
+            <com.xcyo.live.view.RoundImageView
+                android:id="@+id/usr_chat_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/temp_singer_photo" />
+
+            <View
+                android:id="@+id/usr_chat_tip"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/darker_gray" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/usr_chat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="---------------"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/usr_chat_sex"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:scaleType="center"
+                android:src="@mipmap/male_icon" />
+
+            <TextView
+                android:id="@+id/usr_chat_levle_tip"
+                android:layout_width="43.5dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/level9"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:text="156"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <com.xcyo.live.view.SlideSwitch
+            android:id="@+id/usr_chat_switch"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical|right"
+            slide:isOpen="false"
+            slide:shape="circle"
+            slide:themeColor="#ff8149ff" />
+    </LinearLayout>
+</LinearLayout>
